@@ -3,7 +3,7 @@ import threading
 
 # Connection Data
 host = '127.0.0.1'
-port = 233
+port = 8000
 
 # Starting Server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -59,4 +59,4 @@ def receive():
         thread = threading.Thread(target=handle, args=(client,))
         thread.start()
 
-recieve()
+receive()
